@@ -81,14 +81,16 @@ def git_command_all(command_list, repo_dir, silent=False):
         if proc_status.returncode != 0:
             error_list.append(base_repo_name)
 
-    # if the silent flag is false
-    if not silent:
-        # print error list
+    # if errors happened
+    if len(error_list) > 0:
         print("Repos for which %s  failed:" % (list2str(command_list)))
 
         # for each repo in the error list
         for repo in error_list:
             print("  ", repo)
+
+        print()
+        print()
 
     # return the proc status list to the caller
     return proc_status_list

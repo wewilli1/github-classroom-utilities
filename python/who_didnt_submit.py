@@ -17,7 +17,7 @@ homework_name = sys.argv[homework_name_index]
 
 # if the received num of args not equal to expected num args
 if len(sys.argv) != expected_num_args:
-    print("Usage: %s <student_repo_dir> <homework_name>" % sys.argv[0])
+    print("Usage: %s <student_repo_dir> <homework_name>" % os.path.basename(sys.argv[0]))
     print("  Example:")
     print("  %s c:/repos/tuesday ist-718-spring-2020-homework-1")
     sys.exit(1)

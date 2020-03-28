@@ -15,7 +15,7 @@ msg = sys.argv[msg_index]
 
 # if the received num of args not equal to expected num args
 if len(sys.argv) != expected_num_args:
-    print("Usage: %s <student_repo_dir>" % sys.argv[0])
+    print("Usage: %s <student_repo_dir>" % os.path.basename(sys.argv[0]))
     sys.exit(1)
 
 git_command_all(['git', 'commit', "-a", "-m", msg], sys.argv[1])
