@@ -1,2 +1,3 @@
 @echo off
-python "%repos%/github-classroom-utilties/python/show_last_commit.py" %1
+
+python "%repos%/github-classroom-utilities/python/show_last_commit.py" "%cd%"

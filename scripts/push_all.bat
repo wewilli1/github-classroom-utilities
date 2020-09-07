@@ -1,3 +1,3 @@
 @echo off
 
-python "%classroom_utils%/python/push_all.py" %1
+python "%classroom_utils%/python/push_all.py" "%cd%"
