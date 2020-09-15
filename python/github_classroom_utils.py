@@ -1,6 +1,7 @@
 import os
 import sys
 import subprocess
+from subprocess import PIPE
 from termcolor import colored
 
 def list2str(command_list):
@@ -37,7 +38,7 @@ def git_command_single_repo(command_list, repo_dir):
     os.chdir(repo_dir)
 
     # perform the git command
-    proc_status = subprocess.run(command_list, capture_output=True)
+    proc_status = subprocess.run(command_list, stdout=PIPE, stderr=PIPE)
 
     # return the proc_status to the caller
     return proc_status
