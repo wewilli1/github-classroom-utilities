@@ -11,6 +11,10 @@ else:
     print ("Invalid command line arguments, please run CloneAssignment.py [name of classroom][name of assignment] [path to roster]")
     sys.exit(0)
 
+print("classroomName: ", classroomName)
+print("assignmentName: ", assignmentName)
+print("rosterPath: ", rosterPath)
+
 with open(rosterPath) as f:
     names = f.read().splitlines()
 

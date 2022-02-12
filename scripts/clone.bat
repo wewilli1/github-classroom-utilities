@@ -9,4 +9,4 @@ if "%~1"=="" (
 )
 
 rem clone the repos
-python "%classroom_utils%/python/CloneAssignment.py" "IST-718-fall-2020" %1 "%repos%/student_repos/students_tuesday.txt"
+python %pyscripts%\CloneAssignment.py IST-718-spring-2022 %1 %srepos%/students.txt

@@ -1,3 +1,3 @@
 @echo off
 
-python "%classroom_utils%/python/pull_all.py" "%cd%"
+python "%pyscripts%/python/pull_all.py" "%cd%"
